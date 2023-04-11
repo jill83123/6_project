@@ -1,0 +1,119 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header{    
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #FCFCFC;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list li{
+    width: 85px;
+    text-align: center;
+}
+
+.list a{
+    text-decoration: none;
+    color: #00cc99;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list a:hover{
+    color: #00e6ac;
+    background-color: #E6F6F9;
+}
+
+.content{
+    margin-bottom: 20px;
+}
+
+.crouse{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.crouse-item{
+    width: 300px;
+    border: #000 1px solid;
+    padding: 10px;
+}
+
+.crouse-item img{
+    width: 300px;
+}
+
+.crouse-item h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #FFE4E1;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

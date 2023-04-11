@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	font-family: Microsoft JhengHei;
+}
+
+.sociallink{
+	height: 25px;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #f6f6f6;
+	padding-right: 10px;
+	box-sizing:border-box;
+	align-items: center;
+}
+
+.sociallink a{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.sociallink span{
+	margin-left: 5px;
+}
+
+.sociallink img{
+	height:	13px;
+}
+
+.facebook{
+	margin-right: 5px;
+}
+
+.twitter{
+	padding-left: 8px;
+	border-left: 2px solid #cccccc;
+}
+
+.facebook span{
+	color: #4460a0;
+}
+
+.facebook:hover{
+	font-weight: bold;
+}
+
+.twitter span{
+	color: #62c8f0;
+}
+
+.twitter:hover{
+	font-weight: bold;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.menu img{
+	height: 35px;
+}
+
+.list{
+	display: flex;
+	align-items: center;
+}
+
+.list li{
+	text-align: center;
+}
+
+.list a{
+	text-decoration: none;
+	color: #66e0c2;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.list a:hover{
+    color: #00e6ac;
+	font-weight: bold;
+	box-shadow: 0px 3px #00e6ac;
+}
+
+.banner{
+	position: relative;
+}
+
+.banner h1{
+	width: 1000px;
+	float: left;
+	position: absolute;
+	top: 95px;
+	left: 0px;
+	padding-left: 25px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 45px;
+	box-sizing: border-box;
+	background-color: #00000021;
+} 
+
+.intro{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.introItem{
+	width: 300px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 1px 3px 3px #cccccc;
+}
+
+.intro img{
+	display: block;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.introItem h2{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.introItem p{
+	margin-top: 12px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	line-height: 22px;
+}
+
+.tableList{
+	margin-top: 65px;
+}
+
+.tableList h1{
+	font-size: 23px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tableList table{
+	margin: auto;
+	margin-top: 30px;
+	width: 840px;
+}
+
+.tableList table tr{
+	border-bottom: 1px solid #cccccc;
+}
+
+.tableList td{
+	line-height: 35px;
+	padding-left: 25px;
+}
+
+.tableList .th{
+	font-weight: bold;
+	background-color: #f7f7f7;
+}
+
+.tableList .green{
+	color: #00a67d;
+}
+
+.form{
+	margin-top: 60px;
+	background-image: url(../images/form_bg.png);
+	background-repeat: repeat-x;
+	background-color: #009772;
+}
+
+.form h1{
+	margin-bottom: 35px;
+	padding-top: 33px;
+	font-size: 23px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+
+.form textarea{
+	width: 460px;
+	height: 265px;
+	margin-left: 25px;
+	border-radius: 5px;
+	resize:none;
+}
+
+.inputData{
+	display: flex;
+	padding-bottom: 30px;
+}
+
+.rightInput{
+	position: relative;
+	margin-left: 40px;
+}
+
+.rightInput label{
+	display: block;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.rightInput label input{
+	width: 435px;
+	height: 25px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+.rightInput .but{
+	position: absolute;
+	float: right;
+	right: 0px;
+	bottom: 0px;
+	width: 70px;
+	height: 35px;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #00cc99;
+	border-radius: 5px;
+	border: none;
+}
+
+.footer{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer img{
+	height: 35px;
+}
+
+.rightfooter span{
+	line-height: 25px;
+}
+
+.rightfooter .red{
+	color: #e12d80;
+	font-weight: bold;
+}
