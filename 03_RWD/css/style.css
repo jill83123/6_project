@@ -164,7 +164,7 @@ table {
     border-bottom: none;
   }
   .header .header-c .nav ul li:hover a {
-    background: rgba(239, 233, 231, 0.8235294118);
+    background: #efe9e7;
   }
 }
 .header .header-c .menu-show ul {
