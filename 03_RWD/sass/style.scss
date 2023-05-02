@@ -6,8 +6,8 @@
     white-space: nowrap;
 }
 
-@mixin iphone5 {
-    @media (max-width:320px) {
+@mixin mobile {
+    @media (min-width:320px) and (max-width: 767px) {
         @content
     }
 }
@@ -91,7 +91,7 @@ $main-color: #3D1101;
                 display: none;
             }
 
-            @include iphone5() {
+            @include mobile() {
 
                 h1 a {
                     margin-left: 13px;
@@ -170,6 +170,21 @@ $main-color: #3D1101;
                 line-height: $p-line-height;
             }
         }
+
+        @include mobile() {
+            .b-text {
+                max-width: 90%;
+                height: auto;
+
+                h2 {
+                    margin: 20px 20px 0 20px;
+                }
+
+                p {
+                    margin: 20px 0;
+                }
+            }
+        }
     }
 }
 
@@ -217,6 +232,12 @@ $main-color: #3D1101;
         .dashed-line::after {
             left: 100%;
             margin-left: 10px;
+        }
+
+        @include mobile() {
+            .dashed-line {
+                overflow: hidden;
+            }
         }
 
         .tip-item {
@@ -267,6 +288,17 @@ $main-color: #3D1101;
                 }
             }
         }
+
+        @include mobile() {
+            .tip-item {
+                flex-direction: column;
+
+                p {
+                    max-width: 80%;
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .tody-chef {
@@ -308,6 +340,22 @@ $main-color: #3D1101;
                     margin-left: -97px;
                     max-height: 460px;
                     object-fit: contain;
+                }
+            }
+        }
+
+        @include mobile() {
+            .tody-chef-c {
+                flex-direction: column;
+                justify-content: center;
+
+                img {
+                    margin-left: 0;
+                    max-width: 100%;
+                }
+
+                .tody-chef-t {
+                    margin: 30px 15px;
                 }
             }
         }
@@ -367,6 +415,15 @@ $main-color: #3D1101;
                 }
             }
         }
+
+        @include mobile() {
+            .impress-content {
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                margin: 0 5%;
+            }
+        }
     }
 
     .reservation {
@@ -396,7 +453,6 @@ $main-color: #3D1101;
                         height: 386px;
                         object-fit: cover;
                     }
-
                 }
 
                 form {
@@ -469,6 +525,34 @@ $main-color: #3D1101;
                     background: rgba(0, 0, 0, 0.35);
                 }
             }
+
+            @include mobile() {
+                .reservat-form {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 20%;
+
+                    img {
+                        height: auto;
+                        max-width: 90%;
+                    }
+
+                    form {
+                        width: 90%;
+                        margin-top: 10px;
+
+                        input {
+                            width: 90%;
+                        }
+
+                        button {
+                            margin: 20px 10px 30px 0;
+                            float: none;
+                        }
+                    }
+
+                }
+            }
         }
     }
 }
@@ -510,6 +594,20 @@ $main-color: #3D1101;
             }
         }
 
+        @include mobile() {
+            .about {
+                display: none;
+            }
+
+            .foot-l {
+                flex-direction: column;
+
+                h3 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
         .foot-r {
             .logo {
                 display: block;
@@ -521,6 +619,12 @@ $main-color: #3D1101;
                 margin-bottom: 25px;
             }
 
+            @include mobile() {
+                .logo {
+                    margin: 20px 0 5px 0;
+                }
+            }
+
             .foot-a {
                 float: right;
 
@@ -529,12 +633,26 @@ $main-color: #3D1101;
                     margin: 0 3px;
                 }
             }
+
+            @include mobile() {
+                .foot-a {
+                    float: none;
+                    margin: 22px 5px 10px 0;
+                }
+            }
         }
     }
 
     @media (max-width:768px) {
         .footer-c {
             padding: 50px 11px;
+        }
+    }
+
+    @include mobile() {
+        .footer-c {
+            flex-direction: column;
+            padding: 50px 0 50px 30px;
         }
     }
 
