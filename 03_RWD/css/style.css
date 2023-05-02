@@ -100,7 +100,7 @@ table {
   display: flex;
 }
 .header .header-c .nav ul li .cart {
-  margin-right: 5px;
+  margin: 0 5px;
 }
 .header .header-c .nav ul li a {
   display: block;
@@ -166,9 +166,9 @@ table {
   .header .header-c .nav ul li:hover a {
     background: rgba(239, 233, 231, 0.8235294118);
   }
-  .header .header-c .nav .menu-show ul {
-    max-height: 500px;
-  }
+}
+.header .header-c .menu-show ul {
+  max-height: 500px;
 }
 .header .banner {
   height: 420px;

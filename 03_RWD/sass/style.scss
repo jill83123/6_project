@@ -58,7 +58,7 @@ $main-color: #3D1101;
 
                 li {
                     .cart {
-                        margin-right: 5px;
+                        margin: 0 5px;
                     }
 
                     a {
@@ -134,12 +134,11 @@ $main-color: #3D1101;
                         }
                     }
                 }
-
-                .menu-show ul {
-                    max-height: 500px;
-                }
             }
+        }
 
+        .menu-show ul {
+            max-height: 500px;
         }
     }
 
