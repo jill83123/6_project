@@ -92,27 +92,52 @@ $main-color: #3D1101;
             }
 
             @include iphone5() {
-                .ham-menu {
-                    display: block;
+
+                h1 a {
+                    margin-left: 13px;
                 }
 
-                ul{ 
+                .ham-menu {
+                    display: block;
+                    margin-right: 13px;
+                    font-size: 25px;
+                }
+
+                ul {
                     position: absolute;
                     top: 56px;
-                    // max-height: 0px;
-                    // overflow: hidden;
-                    // transition: max-height 1.5s;
-                    // background: rgba(0, 0, 0, 0.75);
-                    
-                    // z-index: 100;
-                    // float: right;
-                    
-                    // left: 0;
-                    // right: 0;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    z-index: 100;
+
+                    max-height: 0px;
+                    overflow: hidden;
+                    transition: max-height 1.5s;
+
+                    li {
+                        width: 100%;
+                        text-align: center;
+
+                        a {
+                            padding: 1em;
+                            transition: all 0.3s;
+                            background: rgba(0, 0, 0, 0.85);
+                        }
+                    }
+
+                    li:hover {
+                        border-bottom: none;
+
+                        a {
+                            background: #efe9e7d2;
+                        }
+                    }
                 }
-                // .menu-show ul{
-                //     max-height: 500px;
-                // }
+
+                .menu-show ul {
+                    max-height: 500px;
+                }
             }
 
         }
