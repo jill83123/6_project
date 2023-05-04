@@ -25,4 +25,18 @@ $main-color: #3D1101;
 .wrap {
     box-sizing: border-box;
     font-family: Microsoft JhengHei Regular;
+
+    .arrow-up{
+        position: fixed;
+        right: 30px;
+        bottom: 50px;
+        font-size: 30px;
+        color: #f56d237c;
+    }
+
+    @include tablet(){
+        .arrow-up{
+            display: none;
+        }
+    }
 }

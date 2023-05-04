@@ -49,11 +49,17 @@
 
                     a:hover {
                         font-weight: bold;
-                        color: #F56C23;
                         border-bottom: 3px solid #F56C23;
+                    }
 
-                        i.fa-cart-shopping {
+                    @include mobile {
+                        a:hover {
                             color: #F56C23;
+                            border-bottom: none;
+
+                            i.fa-cart-shopping {
+                                color: #F56C23;
+                            }
                         }
                     }
                 }

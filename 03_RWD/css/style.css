@@ -57,6 +57,18 @@ table {
           box-sizing: border-box;
   font-family: Microsoft JhengHei Regular;
 }
+.wrap .arrow-up {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  font-size: 30px;
+  color: rgba(245, 109, 35, 0.4862745098);
+}
+@media (max-width: 768px) {
+  .wrap .arrow-up {
+    display: none;
+  }
+}
 
 .header {
   height: 420px;
@@ -113,11 +125,16 @@ table {
 }
 .header .header-c .nav ul li a:hover {
   font-weight: bold;
-  color: #F56C23;
   border-bottom: 3px solid #F56C23;
 }
-.header .header-c .nav ul li a:hover i.fa-cart-shopping {
-  color: #F56C23;
+@media (min-width: 320px) and (max-width: 767px) {
+  .header .header-c .nav ul li a:hover {
+    color: #F56C23;
+    border-bottom: none;
+  }
+  .header .header-c .nav ul li a:hover i.fa-cart-shopping {
+    color: #F56C23;
+  }
 }
 .header .header-c .nav .ham-menu {
   display: none;
