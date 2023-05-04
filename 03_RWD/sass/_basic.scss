@@ -1,0 +1,28 @@
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin mobile {
+    @media (min-width:320px) and (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+$font-h2: 36px;
+$font-h3: 24px;
+$font-h4: 18px;
+$p-line-height: 22px;
+$main-color: #3D1101;
+
+.wrap {
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei Regular;
+}
