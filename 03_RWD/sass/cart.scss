@@ -158,8 +158,8 @@
                         }
                     }
 
-                    @include mobile{
-                        .fa-cart-shopping{
+                    @include mobile {
+                        .fa-cart-shopping {
                             position: fixed;
                             bottom: 10px;
                             right: 10px;
@@ -188,6 +188,10 @@
                         position: relative;
                         border-radius: 5px;
                         box-shadow: 3px 3px 4px 0px #2800002c;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
 
                         img {
                             width: 220px;
@@ -231,11 +235,12 @@
                             color: #fff;
                         }
 
-                        .hot{
+                        .hot {
                             position: absolute;
                             right: -10px;
                             top: 5px;
-                            background-color: #ff5e45ec;;
+                            background-color: #ff5e45ec;
+                            ;
                             width: 50px;
                             height: 30px;
                             line-height: 1.5;
@@ -245,7 +250,6 @@
                         .add-cart {
                             position: absolute;
                             bottom: 10px;
-                            left: 10px;
                             width: 200px;
                             display: block;
                             border: 1px solid #FF5E45;
@@ -257,6 +261,15 @@
                             .fa-solid {
                                 margin-right: 5px;
                                 color: #FF5E45;
+                            }
+                        }
+                    }
+
+                    @include mobile {
+                        li {
+                            max-width: 90%;
+                            img{
+                                width: 100%;
                             }
                         }
                     }
@@ -272,27 +285,16 @@
         }
     }
 
-    @include mobile{
-        .content-c{
+    @include mobile {
+        .content-c {
             padding-top: 15px;
         }
     }
 
 }
 
-.red{
+.red {
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @import '_footer';

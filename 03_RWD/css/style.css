@@ -485,6 +485,7 @@ table {
     height: 386px;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-left: 1%;
   }
 }
 .content .reservation .reservation-c .reservat-form form {
