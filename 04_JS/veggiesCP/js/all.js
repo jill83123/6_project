@@ -3,7 +3,7 @@ let data = [];
 axios.get('https://hexschool.github.io/js-filter-data/data.json')
     .then(function (response) {
         data = response.data;
-        updateList(data);
+        renderData(data);
     });
 
 const showList = document.querySelector('.showList');
@@ -44,14 +44,20 @@ buttonGroup.addEventListener('click', function (e) {
 
 //搜尋
 searchData = document.querySelector('.seach-group');
-let cropInput;
+const cropInput = document.querySelector("input[type='text']");
+let cropInputData;
 
 searchData.addEventListener('click', function (e) {
-    if (e.target.classList.contains('search')) {
-        if (e.target.value === '') {
+    if (e.target.nodeName === 'BUTTON') {
+        if (cropInput.value === '') {
             alert('請輸入作物名稱');
+            return;
         }
-        
+        cropInputData = data.filter(i => String(i.作物名稱).match(cropInput.value.trim()))
+        renderData(cropInputData);
+        if (cropInputData.length === 0) {
+            showList.innerHTML = `<tr><td colspan="7" style="text-align: center">查無此資料</td></tr>`;
+        }
     }
 })
 
