@@ -165,3 +165,7 @@ body {
   top: 9px;
   right: -15px;
 }
+
+.fas{
+  cursor: pointer;
+}
