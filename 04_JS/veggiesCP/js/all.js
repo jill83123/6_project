@@ -91,16 +91,16 @@ searchData.addEventListener('keypress', function (e) {
 sortSelect = document.querySelector('.sort-select');
 
 sortSelect.addEventListener('change', function (e) {
-    if (cropInput !== '') {
-        data = cropInputData;
-    }
-    if (sortData !== 0) {
-        data = sortData;
+    let sourceData = data;
+    if (cropInput.value !=='') {
+        sourceData = cropInputData;
+    } else if (sortData.length !== 0) {
+        sourceData = sortData; 
     }
     switch (e.target.value) {
         case "排序篩選":
-            data = originalData
-            renderData(data);
+            sourceData = originalData
+            renderData(sourceData);
             break
         case "依上價排序":
             sortItems("上價")
@@ -119,9 +119,9 @@ sortSelect.addEventListener('change', function (e) {
             break
     }
     function sortItems(value) {
-        data.sort((a, b) => { return a[value] - b[value]; })
+        sourceData.sort((a, b) => { return a[value] - b[value]; })
     }
-    renderData(data);
+    renderData(sourceData);
 })
 
 //標籤排序
