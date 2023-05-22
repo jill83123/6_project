@@ -92,10 +92,10 @@ sortSelect = document.querySelector('.sort-select');
 
 sortSelect.addEventListener('change', function (e) {
     let sourceData = data;
-    if (cropInput.value !=='') {
+    if (cropInput.value !== '') {
         sourceData = cropInputData;
     } else if (sortData.length !== 0) {
-        sourceData = sortData; 
+        sourceData = sortData;
     }
     switch (e.target.value) {
         case "排序篩選":
@@ -129,15 +129,18 @@ iSort = document.querySelector('.js-sort-advanced');
 
 iSort.addEventListener('click', function (e) {
     const iPrice = e.target.dataset.price
-
+    let iSortData = data;
+    if (cropInput.value !== '') {
+        iSortData = cropInputData
+    } else if (sortData.length !== 0) {
+        iSortData = sortData
+    }
     if (e.target.nodeName === 'I') {
         if (e.target.dataset.sort === 'up') {
-            data.sort((a, b) => { return a[iPrice] - b[iPrice]; })
+            iSortData.sort((a, b) => { return a[iPrice] - b[iPrice]; })
         } else if (e.target.dataset.sort === 'down') {
-            data.sort((a, b) => { return b[iPrice] - a[iPrice]; })
+            iSortData.sort((a, b) => { return b[iPrice] - a[iPrice]; })
         }
     }
-    renderData(data);
+    renderData(iSortData);
 })
-
-renderData(data);
