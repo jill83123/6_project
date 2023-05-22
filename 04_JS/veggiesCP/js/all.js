@@ -63,10 +63,12 @@ searchData = document.querySelector('.seach-group');
 const cropInput = document.querySelector("input[type='text']");
 let cropInputData;
 
-searchData.addEventListener('click', function (e) {
-    if (e.target.nodeName === 'BUTTON') {
+function search(e) {
+    if (e.target.nodeName === 'BUTTON' || e.key === 'Enter') {
         if (cropInput.value === '') {
             alert('請輸入作物名稱');
+            data = originalData
+            renderData(data);
             return;
         }
         cropInputData = data.filter(i => String(i.作物名稱).match(cropInput.value.trim()))
@@ -75,22 +77,23 @@ searchData.addEventListener('click', function (e) {
             showList.innerHTML = `<tr><td colspan="7" style="text-align: center">查無此資料</td></tr>`;
         }
     }
+}
+
+searchData.addEventListener('click', function (e) {
+    search(e)
 })
 
 searchData.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        cropInputData = data.filter(i => String(i.作物名稱).match(cropInput.value.trim()))
-        renderData(cropInputData);
-        if (cropInputData.length === 0) {
-            showList.innerHTML = `<tr><td colspan="7" style="text-align: center">查無此資料</td></tr>`;
-        }
-    }
+    search(e)
 })
 
 //下拉排序
 sortSelect = document.querySelector('.sort-select');
 
 sortSelect.addEventListener('change', function (e) {
+    if(cropInput!='') {
+        data=cropInputData;
+    }
     switch (e.target.value) {
         case "排序篩選":
             data = originalData
@@ -112,7 +115,6 @@ sortSelect.addEventListener('change', function (e) {
             sortItems("交易量")
             break
     }
-
     function sortItems(value) {
         data.sort((a, b) => { return a[value] - b[value]; })
     }
