@@ -91,8 +91,11 @@ searchData.addEventListener('keypress', function (e) {
 sortSelect = document.querySelector('.sort-select');
 
 sortSelect.addEventListener('change', function (e) {
-    if(cropInput!='') {
-        data=cropInputData;
+    if (cropInput !== '') {
+        data = cropInputData;
+    }
+    if (sortData !== 0) {
+        data = sortData;
     }
     switch (e.target.value) {
         case "排序篩選":
