@@ -146,6 +146,8 @@ table {
     margin: 0 auto;
 }
 
+/* title */
+
 .title {
     font-size: 128px;
     line-height: 192px;
@@ -153,15 +155,15 @@ table {
     color: #000000;
 }
 
-h1 {
+.title h1 {
     padding-top: 160px;
 }
 
-h2 {
+.title h2 {
     text-align: right;
 }
 
-img {
+.title img {
     display: block;
     margin: 0 auto;
 }
@@ -185,7 +187,7 @@ img {
 
 /* info */
 
-.content {
+.info .content {
     width: 636px;
     margin-bottom: 40px;
 }
@@ -219,17 +221,17 @@ img {
     background: #000000;
 }
 
-.hide-text {
+.footer .hide-text {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.link {
+.footer .link {
     text-align: center;
 }
 
-.link a {
+.footer .link a {
     display: inline-block;
     width: 64px;
     height: 64px;
