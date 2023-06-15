@@ -139,7 +139,6 @@ table {
 .wrap{
     width: 640px;
     margin: 0 auto ;
-    background-color: #f9ded9;
 }
 
 .content{
@@ -181,7 +180,7 @@ table {
 
 .footer span{
     font-size:16px; 
-    line-height:1.5;
+    line-height:120px;
     display: block;
     text-align: center;
 }
