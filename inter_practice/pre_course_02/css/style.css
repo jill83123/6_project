@@ -153,7 +153,7 @@ body {
     box-sizing: border-box;
 }
 
-.wrap {
+.center {
     width: 940px;
     margin: 0 auto;
 }
@@ -211,6 +211,7 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .side-bar ul {
@@ -354,14 +355,123 @@ body {
     line-height: 72px;
 }
 
-.footer-top .logo {
+.footer{
+    width: 1024px;
+    margin: 0 auto;
+    color: #3F5D45;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 116px;
+    background-color: #3F5D45;
+}
+
+.footer-top input {
+    width: 316px;
+    height: 56px;
+    outline: none;
+}
+
+.footer-top button {
+    width: 64px;
+    height: 56px;
+    border: none;
+    background-color: #FFE180;
+    cursor: pointer;
+}
+
+.footer-top input {
+    border: none;
+    background-color: #EAF0ED;
+}
+
+.footer-top .logo{
+    width: 276px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-top .logo img{
     width: 40px;
+}
+
+.footer-top .logo span{
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 20px;
+    color: #EAF0ED;
+}
+
+.email-sub {
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    background-color: #EAF0ED;
+}
+
+.mail-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px 0 20px;
+}
+
+.footer-bottom{
+    position: relative;
+    background-color: #EAF0ED;
+    height: 341px;
+}
+
+.footer-bottom .footer-left{
+    position: absolute;
+    top: 39px;
+    left: 122px;
 }
 
 .footer-bottom .logo {
     width: 171px;
+    margin-bottom: 115px;
+}
+
+.footer-bottom .info{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.link a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.line{
+    background: url(../images/ic-line@.svg) no-repeat;
+}
+
+.facebook{
+    margin-left: 8px;
+    background: url(../images/ic-facebook.svg) no-repeat;
+}
+
+.footer-bottom .footer-right img{
+    position: absolute;
+    top: 30px;
+    right: 122px;
+}
+
+.link span{
+    margin-left: 450px;
+}
+
+.footer-bottom .footer-right span{
+    position: absolute;
+    bottom: 30px;
+    right: 122px;
 }
 
 .footer-bottom .footer-right .text {
     width: 59px;
+    display: block;
 }

@@ -11,7 +11,7 @@
 <body>
     <div class="wrap">
 
-        <div class="header">
+        <div class="header center">
             <div class="navbar">
                 <h1><a class="logo hide-text" href="#">logo</a></h1>
                 <div class="menu">
@@ -26,7 +26,7 @@
             <img src="./images/banner.png" alt="banner">
         </div>
 
-        <div class="content">
+        <div class="content center">
             <div class="side-bar">
                 <ul>
                     <li class="sort">甜點類別</li>
@@ -113,11 +113,17 @@
 
         <div class="footer">
             <div class="footer-top">
-                <img class="logo" src="./images/logo-light.svg" alt="footer-logo"><span>訂閱你我的甜蜜郵件</span>
-                <label for="email-sub">
-                    <img src="./images/mail-24px.png" alt="mail-icon">
-                    <input type="email" name="email-sub" placeholder="sweetaste@email.com 800"></label>
-                <button><img src="./images/arrow_forward-24px.png" alt="sub-button"></button>
+                <div class="logo">
+                    <img src="./images/logo-light.svg" alt="footer-logo">
+                    <span>訂閱你我的甜蜜郵件</span>
+                </div>
+                <label>
+                    <div class="email-sub">
+                        <img class="mail-icon" src="./images/mail-24px.png" alt="mail-icon">
+                        <input type="email" placeholder="sweetaste@email.com 800">
+                        <button type="submit"><img src="./images/arrow_forward-24px.png" alt="sub-button"></button>
+                    </div>
+                </label>
             </div>
 
             <div class="footer-bottom">
@@ -129,13 +135,13 @@
                         <p>高雄市新興區幸福路 520 號</p>
                     </div>
                     <div class="link">
-                        <a href="#">line</a>
-                        <a href="#">facebook</a>
+                        <a class="line hide-text" href="#">line</a>
+                        <a class="facebook hide-text" href="#">facebook</a>
+                        <span>© 2018 Sweetaste* All Rights Reserved</span>
                     </div>
                 </div>
                 <div class="footer-right">
                     <img class="text" src="./images/footer_right_text.png" alt="今天是個吃甜點的好日子">
-                    <span>© 2018 Sweetaste* All Rights Reserved</span>
                 </div>
             </div>
         </div>
