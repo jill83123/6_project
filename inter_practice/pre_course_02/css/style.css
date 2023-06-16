@@ -419,13 +419,14 @@ body {
 }
 
 .footer-bottom{
-    position: relative;
+    display: flex;
+    justify-content: space-around;
     background-color: #EAF0ED;
     height: 341px;
 }
 
 .footer-bottom .footer-left{
-    padding: 39px 0 0 122px;
+    margin-top: 38px;
 }
 
 .footer-bottom .logo {
@@ -453,23 +454,15 @@ body {
     background: url(../images/ic-facebook.svg) no-repeat;
 }
 
-.footer-bottom .footer-right img{
-    position: absolute;
-    top: 30px;
-    right: 122px;
-}
-
-.link span{
-    margin-left: 450px;
-}
-
-.footer-bottom .footer-right span{
-    position: absolute;
-    bottom: 30px;
-    right: 122px;
+.footer-bottom .footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
 }
 
 .footer-bottom .footer-right .text {
     width: 59px;
     display: block;
+    margin-bottom: 46px;
 }
