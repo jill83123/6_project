@@ -425,9 +425,7 @@ body {
 }
 
 .footer-bottom .footer-left{
-    position: absolute;
-    top: 39px;
-    left: 122px;
+    padding: 39px 0 0 122px;
 }
 
 .footer-bottom .logo {
