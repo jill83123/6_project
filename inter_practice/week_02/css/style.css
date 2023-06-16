@@ -136,6 +136,274 @@ table {
 
 /* css reset */
 
-*,body{
+*,
+body {
+    box-sizing: border-box;
     font-family: 'Bruno Ace SC', cursive;
+}
+
+.center {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #000000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.nav li a {
+    margin-top: 40px;
+    display: block;
+    max-width: 306px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+.nav li a:hover {
+    border-bottom: 3px solid #D1D1D1;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .william-photo {
+    margin: 72px 0;
+}
+
+.banner .name {
+    margin-left: 24px;
+}
+
+.banner .name h2 {
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 94px;
+
+}
+
+.banner .name h1 {
+    font-size: 128px;
+    line-height: 192px;
+    text-align: right;
+    color: #00FFA3;
+}
+
+.banner .name span {
+    display: block;
+    margin-left: auto;
+    width: 185px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+
+.banner .name span img {
+    margin-left: 9px;
+}
+
+.banner .name a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 48px;
+    color: #000000;
+}
+
+.intro {
+    background-image: url(../images/background-img.png);
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0;
+}
+
+.self-intro {
+    max-width: 526px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.self-intro h2 {
+    margin-bottom: 36px;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.self-intro p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.self-intro li {
+    margin: 32px 16px 0 0;
+    max-width: 32px;
+    display: inline-block;
+}
+
+.intro-content .photo {
+    display: flex;
+    max-height: 600px;
+}
+
+.intro-content .photo img {
+    margin-left: 24px
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0;
+}
+
+.about .trait ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.about .trait li {
+    max-width: 306px;
+    border: 1px solid #E3E3E3;
+    margin: 0 24px 24px 0;
+    padding: 16px;
+}
+
+.about .trait li span,
+.about .trait li h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about .trait li p {
+    line-height: 24px;
+}
+
+.about-me {
+    max-width: 526px;
+}
+
+.about-me h2 {
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.about-me p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.contact {
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 0;
+}
+
+.contact-me-h2 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-h2 h2 {
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.contact-me-h2 img {
+    margin-left: 28px;
+}
+
+.link a {
+    margin-left: 20px;
+    display: inline-block;
+    max-width: 162px;
+    max-height: 162px;
+}
+
+.link img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.link a:hover {
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px;
+}
+
+.projects-middle-content,
+.projects-middle,
+.projects-bottom,
+.projects-content {
+    display: flex;
+}
+
+.projects-content{
+    justify-content: space-between;
+    padding: 160px 0;
+}
+
+.projects h2 {
+    margin: 0 0 16px 114px;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.projects-middle-content{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 24px;
+}
+
+.projects-middle-content p {
+    max-width: 636px;
+    line-height: 24px;
+}
+
+.projects-middle-content span{
+    
+}
+
+.projects-middle-content a{
+    max-width: 185px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 48px;
+    border-radius: 32px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-bottom{
+    margin-top: 28px;
+    justify-content: space-between;
+}
+
+.footer{
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 104px;
+    background-color: #000000;
 }
