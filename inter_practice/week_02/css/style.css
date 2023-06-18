@@ -142,7 +142,7 @@ body {
     font-family: 'Bruno Ace SC', cursive;
 }
 
-.center {
+.container {
     width: 1296px;
     margin: 0 auto;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .nav li a:hover {
-    border-bottom: 3px solid #D1D1D1;
+    color: #00FFA3;
 }
 
 .banner {
