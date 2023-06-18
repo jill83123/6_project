@@ -355,11 +355,11 @@ body {
 .projects-middle-content,
 .projects-middle,
 .projects-bottom,
-.projects-content {
+.projects {
     display: flex;
 }
 
-.projects-content{
+.projects{
     justify-content: space-between;
     padding: 160px 0;
 }
@@ -407,4 +407,8 @@ body {
     text-align: center;
     line-height: 104px;
     background-color: #000000;
+}
+
+.footer span{
+    margin: 0 auto;
 }
