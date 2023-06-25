@@ -1,0 +1,244 @@
+@import 'reset';
+@import 'variable';
+@import 'utilities';
+
+.series-sort {
+    .container {
+        padding: 0;
+    }
+
+    li {
+        width: 33.333%;
+        border: 1px solid #DCDCDC;
+
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+
+    a {
+        display: block;
+        font-family: $font-roboto;
+        font-size: 32px;
+        font-weight: $medium;
+        color: $black;
+        text-align: center;
+        line-height: 96px;
+    }
+
+    .selected {
+        border-bottom: 8px solid $primary;
+    }
+
+    @include tablet {
+        a {
+            line-height: 68px;
+            font-size: $font-size-h4;
+        }
+    }
+
+    @include sm {
+        a {
+            line-height: 56px;
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.product-banner {
+    max-height: 296px;
+
+    img {
+        display: block;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    @include tablet {
+        min-height: 296px;
+    }
+
+    @include sm {
+        min-height: 136px;
+    }
+}
+
+.products-list {
+    padding-top: 80px;
+
+    .series-name {
+        text-align: center;
+        margin-bottom: 32px;
+
+        h2 {
+            font-size: 42px;
+            font-family: $font-roboto;
+            font-weight: $medium;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-family: $font-roboto;
+        }
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        width: 23%;
+        font-size: $font-size-l;
+        padding: 0 1%;
+        margin-bottom: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        color: $black;
+    }
+
+    span {
+        color: $primary;
+        font-weight: $medium;
+    }
+
+    .color-options {
+        a {
+            display: inline-block;
+        }
+
+        .color-brown {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: #5F3E2D;
+        }
+
+        .color-brown-light {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: #B75929;
+        }
+    }
+
+    @include lg {
+        li {
+            width: 32%;
+        }
+    }
+
+    @include tablet {
+        li {
+            width: 48%;
+        }
+    }
+
+    @include xs {
+        padding-top: 40px;
+
+        li {
+            width: 98%;
+            margin-bottom: 24px;
+        }
+
+        .series-name {
+
+            h2,
+            h3 {
+                font-size: $font-size-l;
+            }
+        }
+    }
+}
+
+.sunglasses {
+    li {
+        width: 32%;
+    }
+
+    @include lg {
+        li {
+            width: 32%;
+        }
+    }
+
+    @include tablet {
+        li {
+            width: 48%;
+        }
+    }
+
+    @include xs {
+        li {
+            width: 98%;
+        }
+    }
+}
+
+.pages {
+    margin-bottom: 80px;
+    height: 48px;
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        margin-right: -1px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid #555555;
+
+        a {
+            color: #555555;
+            padding: 0 16px;
+        }
+
+        &:hover {
+            background-color: #F2F2F2;
+        }
+    }
+
+    .select a {
+        color: $white;
+        background-color: $black;
+    }
+
+    .last,
+    .next {
+        li a {
+            background-color: $white;
+            padding: 0 12px;
+        }
+    }
+
+    a {
+        display: block;
+    }
+
+    @include sm {
+        li {
+            a {
+                padding: 0 14px;
+                line-height: 45px;
+            }
+        }
+    }
+
+    @include xs {
+        margin-bottom: 64px;
+
+        li {
+            a {
+                padding: 0 10px;
+                line-height: 40px;
+            }
+        }
+    }
+}

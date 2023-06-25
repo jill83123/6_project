@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>紅色眼鏡 | <%- title %></title>
+  <link rel="shortcut icon" href="./assets/images/home-sectioin2-4.ico" type="image/x-icon">
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/layout.css">
+  <link rel="stylesheet" href="./assets/style/<%- css %>">
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="container d-flex align-center justify-content-between">
+      <h1><a href="./index.html"><img src="./assets/images/logo-new.png" alt="紅色眼鏡"></a></h1>
+      <ul class="menu d-flex">
+        <li><a href="series.html">系列鏡框</a></li>
+        <li><a href="shop.html">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="question.html">常見問題 </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <%- contents %>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-link d-flex align-center justify-content-between">
+          <ul class="menu d-flex">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="series.html">系列鏡框</a></li>
+            <li><a href="shop.html">門市據點</a></li>
+            <li><a href="blog.html">部落格</a></li>
+            <li><a href="question.html">常見問題 </a></li>
+          </ul>
+          <div class="social-media d-flex align-center">
+            <a href="#"><img src="./assets/images/desktop/ic-social-fb.png" alt=""></a>
+            <a href="#"><img src="./assets/images/desktop/ic_social_ig.png" alt=""></a>
+            <a href="#"><img src="./assets/images/desktop/ic_social_line.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <span class="material-symbols-outlined">call</span>
+          <p>0800-000-000</p>
+          <br>
+          <span class="mail material-symbols-outlined">mail</span>
+          <p>glasses@business.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex justify-content-between">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <div class="terms">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

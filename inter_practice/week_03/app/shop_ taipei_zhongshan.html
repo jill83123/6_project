@@ -1,0 +1,45 @@
+---
+title: 門市據點
+css: shop_taipei_zhongshan.css
+layout: ./app/layout.ejs
+engine: ejs
+current: shop_taipei_zhongshan
+---
+
+<section class="shop">
+    <div class="container">
+        <h2>門市據點</h2>
+        <div class="select-location d-flex align-center">
+            <span>選擇分店</span>
+            <select name="location">
+                <option selected="Taipei-zhongshan">台北中山旗艦店</option>
+                <option value="Taichung-zhongshan">台北中山旗艦店</option>
+                <option value="Tainan-zhongshan">台北中山旗艦店</option>
+            </select>
+        </div>
+        <div class="shop-info d-flex justify-content-between">
+            <ul class="shop-detail">
+                <li>
+                    <img src="./assets/images/desktop/store-1.png" alt="store-1">
+                </li>
+                <li>
+                    <h3>台北中山旗艦店</h3>
+                    <div class="contact d-flex">
+                        <div class="icon d-flex">
+                            <span class="material-symbols-outlined">call</span>
+                            <span class="material-symbols-outlined">schedule</span>
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div class="text d-flex">
+                            <p>電話：(02)000-1234</p>
+                            <p>營業時間：10:00-21:00</p>
+                            <p>地址：台北市中山區南京東路25巷2-1號</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="map">
+                <img src="./assets/images/desktop/storepage-2.png" alt="">
+            </div>
+        </div>
+</section>
