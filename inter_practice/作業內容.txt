@@ -1,0 +1,6 @@
+課前一：標籤、margin、padding、text-align...等 運用
+課前二：flex、相對位置
+
+第一週：同課前一 + kata
+第二週：flex
+第三、四週：flex、scss、gulp、ejs、rwd
