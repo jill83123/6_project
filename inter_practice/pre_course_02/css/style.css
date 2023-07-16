@@ -3,135 +3,48 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* css reset */
@@ -145,7 +58,7 @@ body {
 }
 
 .font-helvetica-neue{
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 .hide-text {
@@ -164,6 +77,10 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
+}
+
+img{
+    vertical-align: middle;
 }
 
 .header {
@@ -194,17 +111,16 @@ body {
 }
 
 .navbar .menu li {
-    height: 40px;
     margin-left: 60px;
 }
 
 .navbar .menu li a {
     display: block;
-    font-size: 16px;
     font-weight: 600;
     line-height: 40px;
     text-decoration: none;
     color: #3F5D45;
+    border-bottom: 3px solid transparent;
 }
 
 .navbar .menu li a:hover {
@@ -213,7 +129,6 @@ body {
 
 .navbar .menu .cart {
     margin-left: 79px;
-    height: 24px;
 }
 
 .content {
@@ -222,22 +137,29 @@ body {
     margin-bottom: 60px;
 }
 
-.side-bar ul {
-    width: 300px;
-    text-align: center;
+.side-bar{
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
     line-height: 65px;
 }
 
-.side-bar .sort {
+.side-bar h2 {
     color: #EAF0ED;
     background-color: #3F5D45;
+}
+
+.side-bar ul {
+    width: 300px;
 }
 
 .side-bar li {
     margin-top: -1px;
     border: 1px solid #EAF0ED;
+}
+
+.side-bar li .active{
+    background-color: #EAF0ED;
 }
 
 .side-bar a {
@@ -306,21 +228,18 @@ body {
     font-weight: 600;
 }
 
-.product .add-cart {
-    text-align: center;
-    background-color: #EAF0ED;
-}
-
-.product .add-cart a {
+.product .add-cart{
     display: block;
     font-size: 24px;
     font-weight: 600;
     line-height: 65px;
     color: #3F5D45;
     text-decoration: none;
+    text-align: center;
+    background-color: #EAF0ED;
 }
 
-.product .add-cart a:hover {
+.product .add-cart:hover {
     color: #EAF0ED;
     background-color: #3F5D45;
 }
@@ -357,10 +276,6 @@ body {
 .pages li .pages-select {
     color: #EAF0ED;
     background-color: #3F5D45;
-}
-
-.pages .arrow {
-    line-height: 72px;
 }
 
 .footer-container{
@@ -408,7 +323,7 @@ body {
     width: 40px;
 }
 
-.footer-top .logo span{
+.footer-top .logo h2{
     font-size: 24px;
     line-height: 29px;
     margin-left: 20px;
@@ -446,6 +361,15 @@ body {
 .footer-bottom .info{
     line-height: 24px;
     margin-bottom: 30px;
+}
+
+.footer-bottom .info a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-bottom .info a:hover{
+    opacity: .6;
 }
 
 .link a{
