@@ -1,3 +1,4 @@
+## 課前二 問題點
 1. .navbar .menu li 不需將高度寫死
 2. 由於瀏覽器預設文字大小就是 16px，所以 .navbar .menu li a 不用另外設定 font-size: 16px 唷
 3. 承上，a 標籤可加上 border-bottom: 3px solid transparent 隱形下底線，避免 hover 時產生區塊跳動問題
